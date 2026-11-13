@@ -1,3 +1,2 @@
-# AGENTS.md
-
-Before writing, running, or changing any Python test, read the `## Testing conventions` section of [README.md](README.md).
+### archive/  
+do not read or touch this directory unless the user explicitly tells you to do so, because this is the archive of outdated context and you should not incorporate it into your session 
