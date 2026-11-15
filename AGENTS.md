@@ -1,2 +1,28 @@
-### archive/  
-do not read or touch this directory unless the user explicitly tells you to do so, because this is the archive of outdated context and you should not incorporate it into your session 
+# AGENTS.md
+
+`docs/constitution/mission.md` — прочитать до первой задачи.
+
+## Всегда
+
+- `archive/` не читать и не трогать без прямой просьбы.
+- Документы — по-русски; код, пути, идентификаторы и ключи JSON — как есть.
+- Инкремент маленький: один модуль или один документ за раз.
+- Правка кода не готова, пока тесты не зелёные. Как их запускать и писать —
+  `docs/testing.md`.
+- Новый документ или скилл — по `context-management`: раскладка и правила, чем
+  файл владеет. Файл вне раскладки — дефект.
+- Коммит с документом не готов, пока его не проверил `context-guard`: проверки
+  диффа не достаточно.
+- Снимать файл с индекса — только `git restore --staged <путь>`. `git reset` не
+  применять: ошибка в аргументах стирает правки, а не только индекс.
+
+## Индекс
+
+Читать по необходимости, не всё сразу.
+
+| Когда нужно | Документ |
+|---|---|
+| узнать, что делаем сейчас и что дальше | `docs/constitution/roadmap.md` |
+| менять код: язык, запуск, раскладка модуля | `docs/constitution/tech-stack.md` |
+| работать над текущей задачей | `docs/specs/features/` |
+| менять или добавлять скилл | `skills/` |

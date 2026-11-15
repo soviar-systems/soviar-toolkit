@@ -18,14 +18,18 @@
 # 1. Constitution
 
 ```bash
-$ tree docs/specs/constitution/
-constitution/
+$ tree docs/constitution/
+docs/constitution/
 ├── mission.md             # the core idea
 ├── roadmap.md             # features are planned
 └── tech-stack.md
 
 1 directory, 3 files
 ```
+
+The constitution lives at `docs/constitution/`, not under `docs/specs/`:
+`docs/specs/` holds the materials of one work item, while the constitution is
+always current and is read on every task.
 
 ## Mission
 
@@ -42,7 +46,7 @@ High-level implementation order, in very small phases of work - 1-3 features in 
 
 ## Skill - VR
 
-`consitution-writing` + validation (questions we have missed, inconsistencies)
+`constitution-writing` + validation (questions we have missed, inconsistencies)
 
 # 2. Feature Specification
 
@@ -55,11 +59,11 @@ High-level implementation order, in very small phases of work - 1-3 features in 
 """
 > IMPORTANT: Ask user questions BEFORE writing any files.
 
-Find the next phase on docs/specs/roadmap.md and make a git worktree, ask me about the feature spec.
+Find the next phase on docs/constitution/roadmap.md and make a git worktree, ask me about the feature spec.
 
 ```bash
 datetime=$(date +%Y%m%dT%H%M%S)
-mkdir -p "docs/specs/features/feat_${datetime}_<slug>/review"
+mkdir -p "docs/specs/features/feat_${datetime}_<slug>"
 ```
 
 In there:
@@ -71,7 +75,6 @@ touch "docs/specs/features/feat_${datetime}_<slug>/{plan,requirements}.md"
 Where:
   - `plan.md` is a series of numbered task groups.
   - `requirements.md` is the scope, decisions, context
-  - `review` is the dir for keeping review files during the feature implementationn
 
 Refer to `docs/specs/` files for guidance.  
 
@@ -86,6 +89,18 @@ Standards:
 
 ### Feature validation
 
+# Conventions
+
+- Documents are written in Russian. Code, paths, identifiers, JSON keys and
+  commit-message verbs stay untranslated.
+- A constitution holds only what is unique to its repository. Team-wide
+  practices (SDD, TDD, model-agnostic, over-engineering) live in skills and
+  apply everywhere; a constitution does not repeat them.
+
+Nothing else here yet. The lifecycle of a spec - where its plan lives, whether it
+is one file or a directory, archival, review location - is open question 4 and
+must not be encoded before it is settled.
+
 # Model-agnostic
 
 - `AGENTS.md` for rules
@@ -97,5 +112,10 @@ Standards:
 
 1. gherkin - is it really needed for the project specification?
 2. cognitive load - is a problem or we just need to let the models go by verifying the app behavior we required?
-3. CLI tools for connecting to telegram and forgejo
+3. CLI tools for connecting to telegram
+4. specs lifecycle - one file or a directory, where the plan of a task lives,
+   archival, review location. Not now: first the basic repository documents,
+   then finally the `qwen_code_cli` module. Small increments, iteratively.
+   Evidence to weigh: `misc/plan_20261003_194935_pre_commit_review.md`
+   is already tracked - the single-file convention has left a file in the repo.
 <!-- #endregion -->
