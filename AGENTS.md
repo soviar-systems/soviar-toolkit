@@ -1,6 +1,6 @@
 # AGENTS.md
 
-`docs/constitution/mission.md` и `docs/GLOSSARY.md` — прочитать до первой задачи.
+`docs/constitution/mission.md` и `GLOSSARY.md` — прочитать до первой задачи.
 Первый говорит, зачем проект, второй — какими словами о нём говорить.
 
 ## Всегда
