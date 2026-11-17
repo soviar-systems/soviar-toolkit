@@ -9,8 +9,8 @@ DeepLearning.AI, «Spec-Driven Development with Coding Agents»:
 > planning» ниже сказано, что `requirements.md` — это «the scope, decisions,
 > context», и что каталог задачи содержит `{plan,requirements}.md`. Решено иначе:
 > требования ставит постановщик задачи, а проработка — гипотезы, решения с
-> отклонёнными вариантами, границы — каталог `research/` в каталоге задачи; этот
-> файл — его `README.md`. В разделе «1. Constitution» ниже сказано, что конституция
+> отклонёнными вариантами, границы — каталог `research/` в каталоге задачи, вход
+> в него — `README.md` каталога. В разделе «1. Constitution» ниже сказано, что конституция
 > «is read on every task»: в каждую сессию грузится только `AGENTS.md`, остальное —
 > по необходимости.
 
