@@ -290,3 +290,8 @@ Untitled.*
 # Qwen Code session settings
 .qwen/
 
+# Заметки человека по задаче: файл живёт на диске, но не в git.
+# Норма — в skills/context-management/research-package.md, раздел «Файл человека».
+# Сохранить в историю: git add -f <путь>
+**/research/notes.md
+
